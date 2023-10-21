@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AKN Bojonegoro</title>
+</head>
+<body>
+    <style>
+        body {
+        background-color: rgb(186, 137, 63);
+        }
+    </style>
+    <h1>JavaScript Can Change Images</h1>
+    <img id="pic_bulboff.jpeg" onclick="changeimage()" src="pic_bulbon.jpg" width="300" height="200">
+    <p>Click the Image to change image.</p>
+    <script>
+        function changeimage() {
+            var image = document.getElementById('dream.jpg');
+            if (image.src.match("pic_bulbon.jpg")) {
+                image.src = "pic_bulboff.jpeg";
+            } else {
+                image.src = "pic_bulbon.jpg";
+            }
+        }
+    </script>
+</body>
+</html>
